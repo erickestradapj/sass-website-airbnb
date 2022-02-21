@@ -9,7 +9,7 @@
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
-         href="https://fonts.googleapis.com/css2?family=Lexend:wght@300,400;700&display=swap"
+         href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700&display=swap"
          rel="stylesheet"
       />
 
@@ -19,12 +19,14 @@
       <title>Airbnb</title>
    </head>
    <body>
+      <!-- =============== HEADER =============== -->
       <header class="header">
          <div class="bar container">
             <div class="bar__logo">
                <p class="bar__name">Viaje</p>
             </div>
 
+            <!-- ===== Navigation ===== -->
             <nav class="bar__navigation">
                <a class="bar__link" href="#">Lugares para hospedarte</a>
                <a class="bar__link" href="#">Experiencias</a>
@@ -36,6 +38,7 @@
             </nav>
          </div>
 
+         <!-- ===== Form ===== -->
          <form class="form container">
             <div class="form__field">
                <label for="address" class="form__label">Ubicación</label>
@@ -67,5 +70,121 @@
             <a href="#" class="header__search-button">Búsqueda Flexible</a>
          </div>
       </header>
+
+      <!-- =============== DESTINATION =============== -->
+      <section class="destinations container section">
+         <h2 class="destinations__heading">Descubre alojamientos populares</h2>
+
+         <ul class="destinations__grid">
+            <li class="destination">
+               <div class="destination__image">
+                  <img src="../build/img/icono_destino_1.png" alt="destination image" />
+               </div>
+
+               <div class="destination__information">
+                  <h3 class="destination__name">París</h3>
+                  <p class="destination__distance">4 horas en avión</p>
+               </div>
+            </li>
+            <li class="destination">
+               <div class="destination__image">
+                  <img src="../build/img/icono_destino_2.png" alt="destination image" />
+               </div>
+
+               <div class="destination__information">
+                  <h3 class="destination__name">San Francisco</h3>
+                  <p class="destination__distance">4 horas en avión</p>
+               </div>
+            </li>
+            <li class="destination">
+               <div class="destination__image">
+                  <img src="../build/img/icono_destino_3.png" alt="destination image" />
+               </div>
+
+               <div class="destination__information">
+                  <h3 class="destination__name">Egipto</h3>
+                  <p class="destination__distance">4 horas en avión</p>
+               </div>
+            </li>
+            <li class="destination">
+               <div class="destination__image">
+                  <img src="../build/img/icono_destino_4.png" alt="destination image" />
+               </div>
+
+               <div class="destination__information">
+                  <h3 class="destination__name">Londres</h3>
+                  <p class="destination__distance">4 horas en avión</p>
+               </div>
+            </li>
+            <li class="destination">
+               <div class="destination__image">
+                  <img src="../build/img/icono_destino_5.png" alt="destination image" />
+               </div>
+
+               <div class="destination__information">
+                  <h3 class="destination__name">Italia</h3>
+                  <p class="destination__distance">4 horas en avión</p>
+               </div>
+            </li>
+            <li class="destination">
+               <div class="destination__image">
+                  <img src="../build/img/icono_destino_6.png" alt="destination image" />
+               </div>
+
+               <div class="destination__information">
+                  <h3 class="destination__name">La India</h3>
+                  <p class="destination__distance">4 horas en avión</p>
+               </div>
+            </li>
+            <li class="destination">
+               <div class="destination__image">
+                  <img src="../build/img/icono_destino_7.png" alt="destination image" />
+               </div>
+
+               <div class="destination__information">
+                  <h3 class="destination__name">Grecia</h3>
+                  <p class="destination__distance">4 horas en avión</p>
+               </div>
+            </li>
+            <li class="destination">
+               <div class="destination__image">
+                  <img src="../build/img/icono_destino_8.png" alt="destination image" />
+               </div>
+
+               <div class="destination__information">
+                  <h3 class="destination__name">New York</h3>
+                  <p class="destination__distance">4 horas en avión</p>
+               </div>
+            </li>
+         </ul>
+      </section>
+
+      <!-- =============== DESTINATIONS =============== -->
+      <section class="places container section">
+         <h2 class="places__heading">Vive en cualquier lugar del mundo</h2>
+
+         <div class="places__grid">
+            <div class="place">
+               <img class="place__image" src="../build/img/vive_1.jpg" alt="place image" />
+
+               <option value="place__name">Escapadas al aire libre</option>
+            </div>
+            <div class="place">
+               <img class="place__image" src="../build/img/vive_2.jpg" alt="place image" />
+
+               <option value="place__name">Alojamiento únicos</option>
+            </div>
+            <div class="place">
+               <img class="place__image" src="../build/img/vive_3.jpg" alt="place image" />
+
+               <option value="place__name">Alojamientos enteros</option>
+            </div>
+            <div class="place">
+               <img class="place__image" src="../build/img/vive_4.jpg" alt="place image" />
+
+               <option value="place__name">Con tu mascota</option>
+            </div>
+         </div>
+      </section>
    </body>
 </html>

@@ -47,7 +47,7 @@ h1 {
 }
 
 h3 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -64,6 +64,10 @@ ul {
   .section {
     padding: 8rem 0;
   }
+}
+
+[class$=__heading] {
+  margin: 2rem 0;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -518,5 +522,78 @@ template {
   .form__field:nth-child(1) {
     padding-left: 4rem;
   }
+}
+
+.destinations__grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  .destinations__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .destinations__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.destination {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+.destination__image {
+  width: 14rem;
+  height: 14rem;
+}
+.destination__name, .destination__distance {
+  margin: 0;
+}
+
+.places__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 28rem);
+  -webkit-column-gap: 4rem;
+     -moz-column-gap: 4rem;
+          column-gap: 4rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+.places__grid > * {
+  scroll-snap-align: center;
+}
+.places__grid::-webkit-scrollbar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .places__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .places__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.place__image {
+  border-radius: 1rem;
+}
+.place__name {
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=styles.css.map */

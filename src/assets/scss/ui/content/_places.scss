@@ -1,0 +1,38 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.places {
+   &__grid {
+      display: grid;
+      //   grid-template-columns: repeat(4, 90vw);
+      grid-template-columns: repeat(4, 28rem);
+      column-gap: 4rem;
+      @include m.scrollHorizontal;
+   }
+
+   &__grid::-webkit-scrollbar {
+      display: none;
+   }
+
+   @include m.tablet {
+      &__grid {
+         @include m.grid(2, 2rem);
+      }
+   }
+
+   @include m.desktop {
+      &__grid {
+         @include m.grid(4, 2rem);
+      }
+   }
+}
+
+.place {
+   &__image {
+      border-radius: 1rem;
+   }
+
+   &__name {
+      font-size: 1.8rem;
+   }
+}
