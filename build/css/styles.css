@@ -569,6 +569,9 @@ template {
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
 }
+.places__grid::-webkit-scrollbar {
+  display: none;
+}
 .places__grid > * {
   scroll-snap-align: center;
 }
@@ -595,5 +598,95 @@ template {
 }
 .place__name {
   font-size: 1.8rem;
+}
+
+.host {
+  color: #ffffff;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 10rem;
+  padding: 5rem;
+  background-image: linear-gradient(to bottom, #000 0%, #000 50%, transparent 50%), url(../img/anfitrion.jpg);
+  background-size: 100%, 60rem;
+  background-position: center, center bottom;
+  background-repeat: no-repeat;
+}
+.host__text {
+  color: #ffffff;
+}
+.host__link {
+  background-color: #ffffff;
+  padding: 2rem 4rem;
+  color: #000;
+  margin-top: 1rem;
+  border-radius: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+}
+@media (min-width: 768px) {
+  .host__link {
+    display: inline-block;
+  }
+}
+@media (min-width: 480px) {
+  .host {
+    background-size: 100%, 70rem;
+    background-position: center, center 200%;
+  }
+}
+@media (min-width: 768px) {
+  .host {
+    grid-template-rows: unset;
+    background-image: linear-gradient(to right, #000 0%, #000 45%, transparent 55%), url(../img/anfitrion.jpg);
+    background-size: 100%, auto;
+    background-position: center, 50% 30%;
+    padding: 15rem 5rem;
+  }
+  .host__content {
+    color: #ffffff;
+    max-width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .host {
+    background-position: center, right center;
+  }
+}
+
+.experiences__list {
+  display: grid;
+  grid-template-columns: repeat(3, 30rem);
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+.experiences__list::-webkit-scrollbar {
+  display: none;
+}
+.experiences__list > * {
+  scroll-snap-align: center;
+}
+@media (min-width: 768px) {
+  .experiences__list {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.experience__image {
+  border-radius: 1rem;
+}
+.experience__title {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.experience__description {
+  font-size: 1.8rme;
 }
 /*# sourceMappingURL=styles.css.map */
